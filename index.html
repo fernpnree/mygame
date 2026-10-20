@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8" />
+    <title>เพื่อนขนฟู ผจญภัย</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="claude:viewport-fit-sides" content="cover" />
+    <meta name="description" content="เกมเลี้ยงเพื่อนขนฟูแล้วจัดทีมส่งไปสำรวจ หาเหรียญ เจอเพื่อนใหม่ เล่นบนมือถือได้ทันที" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="เพื่อนขนฟู" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@400;500;600&family=Mali:wght@500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="topbar">
+        <div class="brand"><b>เพื่อนขนฟู</b><span>ผจญภัย</span></div>
+        <div class="coin-pill" id="coin-pill" aria-label="เหรียญ">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="9.5" fill="#FFD66B" stroke="#D99A1E" stroke-width="1.6" />
+            <circle cx="12" cy="12" r="6.6" fill="none" stroke="#E9B23C" stroke-width="1.2" />
+            <ellipse cx="12" cy="13.6" rx="2.6" ry="2.1" fill="#D99A1E" />
+            <circle cx="9.2" cy="10.6" r="1.1" fill="#D99A1E" />
+            <circle cx="11.2" cy="9.3" r="1.1" fill="#D99A1E" />
+            <circle cx="12.8" cy="9.3" r="1.1" fill="#D99A1E" />
+            <circle cx="14.8" cy="10.6" r="1.1" fill="#D99A1E" />
+          </svg>
+          <span id="coins" class="num">0</span>
+        </div>
+        <button class="icon-btn" data-action="openSettings" aria-label="ตั้งค่า">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="3" />
+            <path d="M12 2.8v2.4M12 18.8v2.4M2.8 12h2.4M18.8 12h2.4M5.5 5.5l1.7 1.7M16.8 16.8l1.7 1.7M5.5 18.5l1.7-1.7M16.8 7.2l1.7-1.7" />
+          </svg>
+        </button>
+      </header>
+      <main class="screen" id="screen">
+        <div class="screen-inner" id="screen-inner">
+          <noscript><p>เกมนี้ต้องเปิด JavaScript ก่อนนะ</p></noscript>
+        </div>
+      </main>
+      <nav class="tabbar" id="tabbar" aria-label="เมนูหลัก"></nav>
+      <div class="toast-root" id="toasts" aria-live="polite"></div>
+    </div>
+    <div class="sheet-root" id="sheet-root" hidden></div>
+  </body>
+</html>
